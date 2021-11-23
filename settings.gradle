@@ -1,0 +1,4 @@
+rootProject.name = 'sao_factions'
+include(
+        'core',
+)

@@ -14,10 +14,10 @@ public final class SaoCorePlugin extends JavaPlugin {
             RegisteredServiceProvider<LuckPerms> provider = Bukkit.getServicesManager().getRegistration(LuckPerms.class);
             if (provider != null) {
                 LuckPerms api = provider.getProvider();
-                getServer().broadcastMessage("Loaded LuckPerms");
+                getServer().broadcastMessage(ChatColor.GREEN + "Loaded LuckPerms");
             }
         } catch (Exception e) {
-            getServer().broadcastMessage(ChatColor.RED + "LuckPerms not loaded!");
+            getServer().broadcastMessage(ChatColor.DARK_RED + "LuckPerms not loaded!");
         }
 
         getServer().broadcastMessage("Successfully Loaded SAO");
