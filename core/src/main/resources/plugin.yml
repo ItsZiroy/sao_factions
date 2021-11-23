@@ -3,3 +3,6 @@ version: '${version}'
 main: net.sao.core.SaoCorePlugin
 api-version: 1.17
 depend: [LuckPerms]
+commands:
+  sao:
+    description: Entry point to SAO
