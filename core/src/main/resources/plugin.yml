@@ -1,0 +1,5 @@
+name: sao.core
+version: '${version}'
+main: net.sao.core.SaoCorePlugin
+api-version: 1.17
+depend: [LuckPerms]
