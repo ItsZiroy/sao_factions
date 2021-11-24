@@ -2,6 +2,9 @@ package net.sao.core.command.abstraction;
 
 import net.sao.core.SaoCorePlugin;
 import net.sao.core.command.permissions.CommandPermission;
+import net.sao.core.sender.Sender;
+
+import java.util.List;
 
 public abstract class Command {
 
@@ -41,5 +44,5 @@ public abstract class Command {
         return this.meta.description();
     }
 
-    public abstract void execute(SaoCorePlugin plugin);
+    public abstract void execute(SaoCorePlugin plugin, Sender sender, List<String> args);
 }
